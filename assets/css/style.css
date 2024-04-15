@@ -277,12 +277,27 @@ footer{
     color:#000;
     rotate: 45deg;
     position: absolute;
-    font-size: 7rem;
+    font-size: 4rem;
     margin-left: 4.5em;
     margin-top: 1em;
     text-align: center;
     font-weight: bold;
+    
 }
+
+.footer-rolling-text p{
+    animation: slide 2s infinite ease backwards;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(200px);
+    }
+  }
 
 .rolling-year{
     -webkit-text-stroke: #000 1px;
